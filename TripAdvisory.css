@@ -1,0 +1,237 @@
+body {
+    background-image: url('../Resources/backgrounds/Background_img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-attachment: fixed;
+    opacity: 0.0;
+    transition: 4s;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar nav {
+    display: flex;
+    width: 50%;
+    /* border: 1px solid white; */
+}
+
+/* .navbar nav ul{ */
+/* border: 1px solid rgb(236, 33, 33); */
+/* } */
+
+.navbar nav ul li h1 {
+    font-size: 2.5rem;
+    color: white;
+    padding: 0 4rem;
+    transform: scaleX(0.0);
+} 
+
+
+.nav-right {
+    display: flex;
+    width: 50%;
+    flex-direction: row-reverse;
+    padding: 2.2rem 4rem;
+    float: right;
+}
+
+.nav-right ul li {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right ul li label img {
+    height: 2.2rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.nav-right ul li input {
+    font-size: 1.2rem;
+    color: white;
+    padding: 0.5rem 0;
+    width: 10rem;
+    /* background-color: #0e2df5; */
+    background-color: crimson;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 2rem;
+    animation: searchbutton 2s infinite;
+}
+
+@keyframes searchbutton {
+    50% {
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 1rem;
+    }
+
+    100% {
+        border-top-left-radius: 2rem;
+        border-bottom-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 2rem;
+    }
+}
+
+/* section */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section .heading {
+    font-size: 4rem;
+    color: white;
+    font-weight: bold;
+    padding: 3rem 0;
+}
+
+span {
+    padding: 0 1rem;
+    margin: 0;
+}
+
+section .heading .span1 {
+    animation: span1 2s infinite;
+}
+
+@keyframes span2 {
+    50% {
+        background-color: rgb(6, 26, 245);
+    }
+
+    100% {
+        background-color: white;
+        color: black;
+    }
+}
+
+section .heading .span2 {
+    animation: span2 2s infinite;
+}
+
+@keyframes span1 {
+    50% {
+        background-color: white;
+        color: black;
+    }
+
+    100% {
+        background-color: rgb(16, 51, 246);
+    }
+}
+
+.sub_heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35rem;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.sub_heading h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: white;
+    position: absolute;
+    top: 43%;
+    width: 22rem;
+}
+
+.sub_heading p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: white;
+    top: 43%;
+    padding: 2rem 0;
+}
+
+/* bottom bar */
+.bottom_bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 0;
+    /* border: 1px solid white; */
+}
+
+/* .bottom_bar div {
+    border: 1px solid white;
+} */
+
+/* bottom_bar left */
+.bottom_bar_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 0.64rem 0;
+}
+
+.bottom_bar_left div {
+    display: flex;
+    align-items: center;
+    margin: 2.8rem 0;
+}
+
+.bottom_bar_left .scroll {
+    color: white;
+    font-size: 1.5rem;
+    transform: rotate(270deg);
+}
+
+.bottom_bar_left .line {
+    width: 6rem;
+    height: 0.1rem;
+    background-color: rgb(43, 215, 228);
+    transform: rotate(270deg);
+    animation: line 8s infinite;
+}
+
+@keyframes line {
+    20%{background-color: red;}
+    44%{background-color: rgb(55, 255, 0);}
+    68%{background-color: rgb(0, 238, 255);}
+    92%{background-color: rgb(85, 0, 255);}
+    100%{background-color: red;}
+}
+
+/* bottom_bar right */
+.bottom_bar_right {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 20rem;
+    width: 50%;
+}
+
+.bottom_bar_right .social-button {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom_bar_right .social-button img {
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem 0;
+    transition: 0.2s;
+}
+
+.bottom_bar_right .social-button img:hover{
+    transform: scale(1.05);
+}
